@@ -106,7 +106,7 @@ window.addEventListener("mousemove", (event) => {
 // Load your GLTF model
 loader.load(
   // Model URL (replace with your model path)
-  "/model/Untitled.glb",
+  "https://media.githubusercontent.com/media/Vict5/panjab/master/public/model/Untitled.glb",
 
   // onLoad callback
   function (glb) {
