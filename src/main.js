@@ -106,7 +106,7 @@ window.addEventListener("mousemove", (event) => {
 // Load your GLTF model
 loader.load(
   // Model URL (replace with your model path)
-  "src/model/Untitled.glb",
+  "public/model/Untitled.glb",
 
   // onLoad callback
   function (glb) {
@@ -252,21 +252,21 @@ function animate() {
     para1.textContent =
       "Architect: Bhanu P. Mathur (also referred to as Shri B.P. Manthur in some sources)\r\nYear Built: 1975 ";
     const image1 = document.getElementById("image1");
-    image1.src = "src/images/sc1.png";
+    image1.src = "public/images/sc1.png";
     image1.style.width = "300px";
     image1.style.height = "150px";
     const content1 = document.getElementById("content1");
     content1.textContent =
       "FIGURE 1: Students’ center model showcasing the ramp and brise soleil used in shading \r\nIntended Use: Hub for student activities, including recreation, dining (cafeterias, coffee house), social gatherings, student council offices, and cultural events. \r\nCurrent Use: Remains a vibrant student hub (known as Stu-C), popular for affordable eateries, hangouts, events, and as a social/cultural landmark; also attracts visitors and alumni. \r\n";
     const image2 = document.getElementById("image2");
-    image2.src = "src/images/sc2.png";
+    image2.src = "public/images/sc2.png";
     image2.style.width = "380px";
     image2.style.height = "150px";
     const content2 = document.getElementById("content2");
     content2.textContent =
       "FIGURE 2 & 3: Effect of brise soleil on the interior of the building, creates cooler shadows, mitigating direct sunlight\r\nClimatic Approaches (Past/Original Design):\r\n Modernist brutalist style with exposed concrete for thermal mass, a prominent external ramp serving as a shading device to reduce heat gain, and integration with surrounding greenery/lake for natural cooling in Chandigarh's hot-dry climate. ";
     const image3 = document.getElementById("image3");
-    image3.src = "src/images/sc3.png";
+    image3.src = "public/images/sc3.png";
     image3.style.width = "380px";
     image3.style.height = "200px";
     const content3 = document.getElementById("content3");
@@ -276,14 +276,14 @@ function animate() {
     content4.textContent =
       "Figure 4: Solar panels fitted on brise soleil\r\nThese align with regional sustainability trends but remain speculative for this specific building. ";
     const image4 = document.getElementById("image4");
-    image4.src = "src/images/sc4.png";
+    image4.src = "public/images/sc4.png";
     image4.style.width = "330px";
     image4.style.height = "200px";
     const content5 = document.getElementById("content5");
     content5.textContent =
       "Figure 5: Students’ center flat roof used as a green roof.";
     const image5 = document.getElementById("image5");
-    image5.src = "src/images/sc5.png";
+    image5.src = "public/images/sc5.png";
     image5.style.width = "330px";
     image5.style.height = "200px";
   };
@@ -297,21 +297,21 @@ function animate() {
     para1.textContent =
       "Architects: Pierre Jeanneret, B.P. Mathur, B.S. Kesavan, and J.S. Sharma. Year Built: Foundation stone laid in 1958; inaugurated in 1963 by Jawaharlal Nehru. Intended Use: Central university library for academic research, reading, and housing extensive collections. Current Use: Main university library with over 800,000 documents, rare manuscripts, digital resources; centrally air-conditioned, 24/7 reading hall access; popular study spot. Climatic Approaches (Past/Original Design): Diagonal east-west orientation for optimal natural ";
     const image1 = document.getElementById("image1");
-    image1.src = "src/images/lb1.png";
+    image1.src = "public/images/lb1.png";
     image1.style.width = "300px";
     image1.style.height = "150px";
     const content1 = document.getElementById("content1");
     content1.textContent =
       "Figure 1: Model of the Northern Facade's RC sun breakers daylight in reading areas; brise-soleil (sun breakers) on northern façade to control glare and heat; projected balconies on south for shading in Chandigarh's hot-dry climate; panoramic views of Shivalik Hills for natural ventilation.";
     const image2 = document.getElementById("image2");
-    image2.src = "src/images/lb2.png";
+    image2.src = "public/images/lb2.png";
     image2.style.width = "380px";
     image2.style.height = "150px";
     const content2 = document.getElementById("content2");
     content2.textContent =
       "Figure 2: Sectional illustration of how the sun breakers facilitate ventilation and sun shading.Present Climatic Approaches: Relies on original passive features plus full central air-conditioning; ongoing conservation for issues like roof leakage.";
     const image3 = document.getElementById("image3");
-    image3.src = "src/images/lb3.png";
+    image3.src = "public/images/lb3.png";
     image3.style.width = "380px";
     image3.style.height = "200px";
     const content3 = document.getElementById("content3");
@@ -328,21 +328,21 @@ function animate() {
     para1.textContent =
       "Architect: Pierre Jeanneret with B.P. Mathur.Year Built: Completed and inaugurated in 1962.";
     const image1 = document.getElementById("image1");
-    image1.src = "src/images/gb1.png";
+    image1.src = "public/images/gb1.png";
     image1.style.width = "300px";
     image1.style.height = "150px";
     const content1 = document.getElementById("content1");
     content1.textContent =
       "Figure 1: Gandhi Bhawan model Intended Use: Centre dedicated to the study of Mahatma Gandhi's life, works, and philosophy; includes auditorium, library, and spaces for seminars/exhibitions.Current Use: Auditorium and hub for Gandhian studies, events, exhibitions; iconic landmark attracting visitors for its architecture and serene setting.";
     const image2 = document.getElementById("image2");
-    image2.src = "src/images/gb2.png";
+    image2.src = "public/images/gb2.png";
     image2.style.width = "380px";
     image2.style.height = "150px";
     const content2 = document.getElementById("content2");
     content2.textContent =
       "Climatic Approaches (Past/Original Design): Lotus-shaped structure placed in a reflecting pond to create evaporative cooling and dry microclimate in Chandigarh's hot- conditions; curved forms and elevated position enhance natural ventilation; reflective water reduces surrounding heat gain.";
     const image3 = document.getElementById("image3");
-    image3.src = "src/images/gb3.png";
+    image3.src = "public/images/gb3.png";
     image3.style.width = "380px";
     image3.style.height = "200px";
     const content3 = document.getElementById("content3");
@@ -352,7 +352,7 @@ function animate() {
     content4.textContent =
       "Figure 4: Use of Solar aerators in the pool\r\nFuture Retrofit Strategies: Focus on conservation rather than major alterations due to heritage status; potential sensitive additions like Solar aerators to enhance evaporative cooling, or solar panels discreetly integrated to generate renewable energy while respecting the iconic form and pond setting. ";
     const image4 = document.getElementById("image4");
-    image4.src = "src/images/gb4.png";
+    image4.src = "public/images/gb4.png";
     image4.style.width = "330px";
     image4.style.height = "200px";
   };
@@ -366,21 +366,21 @@ function animate() {
     para1.textContent =
       "Architect: Pierre Jeanneret Year Built: Primarily late 1950s to 1960s (as part of the campus development post-1956 relocation).";
     const image1 = document.getElementById("image1");
-    image1.src = "src/images/bh1.png";
+    image1.src = "public/images/bh1.png";
     image1.style.width = "300px";
     image1.style.height = "150px";
     const content1 = document.getElementById("content1");
     content1.textContent =
       "Figure 1: Model of boy’s hostel Intended Use: Residential accommodation for male students, providing affordable living with shared rooms, mess facilities, and common areas.  Current Use: Active residence for male students (8 hostels accommodating thousands); vibrant community spaces with mess, canteens, and recreational facilities. ";
     const image2 = document.getElementById("image2");
-    image2.src = "src/images/bh2.png";
+    image2.src = "public/images/bh2.png";
     image2.style.width = "380px";
     image2.style.height = "150px";
     const content2 = document.getElementById("content2");
     content2.textContent =
       "Climatic Approaches (Past/Original Design): Modernist design with exposed brick/concrete for thermal mass, sun-filled balconies and light wells for natural ventilation and daylight, orientation to maximize cross-breeze in hot-dry climate.  ";
     const image3 = document.getElementById("image3");
-    image3.src = "src/images/bh3.png";
+    image3.src = "public/images/bh3.png";
     image3.style.width = "380px";
     image3.style.height = "200px";
     const content3 = document.getElementById("content3");
@@ -389,7 +389,7 @@ function animate() {
     const content4 = document.getElementById("content4");
     content4.textContent = "Figure 4: Flat roof used as green roof";
     const image4 = document.getElementById("image4");
-    image4.src = "src/images/bh4.png";
+    image4.src = "public/images/bh4.png";
     image4.style.width = "330px";
     image4.style.height = "200px";
   };
