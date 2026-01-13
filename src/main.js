@@ -60,54 +60,10 @@ const dracoLoader = new DRACOLoader();
 dracoLoader.setDecoderPath("https://www.gstatic.com/draco/v1/decoders/");
 loader.setDRACOLoader(dracoLoader);
 const p = document.createElement("p");
-function createpointOfInterest(name, X, Y, Z) {
-  const ball = new THREE.SphereGeometry(0.05);
-  const mat = new THREE.MeshBasicMaterial({ color: 0xff0000 });
-  const sphere = new THREE.Mesh(ball, mat);
-  sphere.position.set(X, Y, Z);
-  sphere.name = name;
-  return sphere;
-}
-const group = new THREE.Group();
-const sphereMesh1 = createpointOfInterest("sphereMesh1", -1.31, 0.58, 5.514);
-group.add(sphereMesh1);
-const sphereMesh2 = createpointOfInterest("sphereMesh2", -1.966, 0.58, 4.788);
-group.add(sphereMesh2);
-const sphereMesh3 = createpointOfInterest("sphereMesh3", -3.39, 0.58, 5.07);
-group.add(sphereMesh3);
-const sphereMesh4 = createpointOfInterest(
-  "sphereMesh4",
-  -3.6965,
-  0.58,
-  1.38411
-);
-group.add(sphereMesh4);
-scene.add(group);
-const mousepos = new THREE.Vector2();
-const raycaster = new THREE.Raycaster();
-const cPointlabel = new CSS2DObject(p);
-window.addEventListener("mousemove", (event) => {
-  camera.updateMatrixWorld();
-  mousepos.x = (event.clientX / window.innerWidth) * 2 - 1;
-  mousepos.y = -(event.clientY / window.innerHeight) * 2 + 1;
-  raycaster.setFromCamera(mousepos, camera);
-  const rect = renderer.domElement.getBoundingClientRect();
-  const intersects = raycaster.intersectObjects(group);
-  if (intersects.length > 0) {
-    switch (intersects[0].object.name) {
-      case "sphereMesh1":
-        console.log("Hovered over Point 1");
-        break;
-      default:
-        break;
-    }
-  }
-});
 // Load your GLTF model
 loader.load(
   // Model URL (replace with your model path)
   "https://media.githubusercontent.com/media/Vict5/panjab/master/public/model/Untitled.glb",
-
   // onLoad callback
   function (glb) {
     const model = glb.scene;
@@ -177,6 +133,12 @@ function clear() {
   cont4.textContent = "";
   const cont5 = document.getElementById("content5");
   cont5.textContent = "";
+  const cont6 = document.getElementById("content6");
+  cont6.textContent = "";
+  const cont7 = document.getElementById("content7");
+  cont7.textContent = "";
+  const cont8 = document.getElementById("content8");
+  cont8.textContent = "";
   const img1 = document.getElementById("image1");
   img1.src = "";
   img1.style.width = "";
@@ -197,27 +159,30 @@ function clear() {
   img5.src = "";
   img5.style.width = "";
   img5.style.height = "";
+  const img6 = document.getElementById("image6");
+  img6.src = "";
+  img6.style.width = "";
+  img6.style.height = "";
+  const img7 = document.getElementById("image7");
+  img7.src = "";
+  img7.style.width = "";
+  img7.style.height = "";
+  const img8 = document.getElementById("image8");
+  img8.src = "";
+  img8.style.width = "";
+  img8.style.height = "";
 }
 function animate() {
   requestAnimationFrame(animate);
   controls.update();
   renderer.render(scene, camera);
   labelRenderer.render(scene, camera);
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "w" || event.key === "W") {
+  window.addEventListener("wheel", (event) => {
+    if (event.deltaY < 0) {
       controls.moveForward(0.0001);
     }
-    if (event.key === "s" || event.key === "S") {
+    if (event.deltaY > 0) {
       controls.moveForward(-0.0001);
-    }
-    if (event.key === "a" || event.key === "A") {
-      controls.moveRight(-0.0001);
-    }
-    if (event.key === "d" || event.key === "D") {
-      controls.moveRight(0.0001);
-    }
-    if (event.key === "l") {
-      console.log("Camera position:", camera.position);
     }
   });
   //code for show / hiding overlay
@@ -248,6 +213,16 @@ function animate() {
     camera.lookAt(-1.31, 0, 5.514);
     const header1 = document.getElementById("header1");
     header1.textContent = "STUDENTS' CENTER";
+    const image6 = document.getElementById("image6");
+    image6.src = "/images/sc6.png";
+    image6.style.width = "180px";
+    image6.style.height = "300px";
+    const content6 = document.getElementById("content6");
+    content6.textContent = "BRISE SOLEIL AND PROTRUDING RC USED FOR SHADING";
+    const image7 = document.getElementById("image7");
+    image7.src = "/images/sc7.png";
+    image7.style.width = "300px";
+    image7.style.height = "200px";
     const para1 = document.getElementById("content");
     para1.textContent =
       "Architect: Bhanu P. Mathur (also referred to as Shri B.P. Manthur in some sources)\r\nYear Built: 1975 ";
@@ -293,6 +268,21 @@ function animate() {
     clear();
     const header1 = document.getElementById("header1");
     header1.textContent = "A.C Joshi Library";
+    const image6 = document.getElementById("image6");
+    image6.src = "/images/lb4.png";
+    image6.style.width = "300px";
+    image6.style.height = "200px";
+    const content6 = document.getElementById("content6");
+    content6.textContent =
+      "PROTRUDING REINFORCED CONCRETE ELEMENTS AROUND WINDOWS";
+    const image7 = document.getElementById("image7");
+    image7.src = "/images/lb5.png";
+    image7.style.width = "220px";
+    image7.style.height = "300px";
+    const image8 = document.getElementById("image8");
+    image8.src = "/images/lb6.png";
+    image8.style.width = "300px";
+    image8.style.height = "200px";
     const para1 = document.getElementById("content");
     para1.textContent =
       "Architects: Pierre Jeanneret, B.P. Mathur, B.S. Kesavan, and J.S. Sharma. Year Built: Foundation stone laid in 1958; inaugurated in 1963 by Jawaharlal Nehru. Intended Use: Central university library for academic research, reading, and housing extensive collections. Current Use: Main university library with over 800,000 documents, rare manuscripts, digital resources; centrally air-conditioned, 24/7 reading hall access; popular study spot. Climatic Approaches (Past/Original Design): Diagonal east-west orientation for optimal natural ";
@@ -305,7 +295,7 @@ function animate() {
       "Figure 1: Model of the Northern Facade's RC sun breakers daylight in reading areas; brise-soleil (sun breakers) on northern façade to control glare and heat; projected balconies on south for shading in Chandigarh's hot-dry climate; panoramic views of Shivalik Hills for natural ventilation.";
     const image2 = document.getElementById("image2");
     image2.src = "/images/lb2.png";
-    image2.style.width = "380px";
+    image2.style.width = "340px";
     image2.style.height = "150px";
     const content2 = document.getElementById("content2");
     content2.textContent =
@@ -324,6 +314,23 @@ function animate() {
     clear();
     const header1 = document.getElementById("header1");
     header1.textContent = "GANDHI BHAWAN";
+    const image6 = document.getElementById("image6");
+    image6.src = "/images/gb5.png";
+    image6.style.width = "300px";
+    image6.style.height = "200px";
+    const content6 = document.getElementById("content6");
+    content6.textContent = "POOL FOR EVAPORATIVE COOLING";
+    const image7 = document.getElementById("image7");
+    image7.src = "/images/gb6.png";
+    image7.style.width = "300px";
+    image7.style.height = "200px";
+    const content7 = document.getElementById("content7");
+    content7.textContent =
+      "PROTRUDING ROOF CREATING VERANDAHS WHICH SHADE BOTH THE INSIDE AND OUTSIDE";
+    const image8 = document.getElementById("image8");
+    image8.src = "/images/gb7.png";
+    image8.style.width = "300px";
+    image8.style.height = "200px";
     const para1 = document.getElementById("content");
     para1.textContent =
       "Architect: Pierre Jeanneret with B.P. Mathur.Year Built: Completed and inaugurated in 1962.";
@@ -362,6 +369,22 @@ function animate() {
     clear();
     const header1 = document.getElementById("header1");
     header1.textContent = "BOYS' HOSTEL";
+    const image6 = document.getElementById("image6");
+    image6.src = "/images/bh5.png";
+    image6.style.width = "300px";
+    image6.style.height = "200px";
+    const content6 = document.getElementById("content6");
+    content6.textContent = "PROJECTING BALCONIES AND RECESSED WINDOWS";
+    const image7 = document.getElementById("image7");
+    image7.src = "/images/bh6.png";
+    image7.style.width = "300px";
+    image7.style.height = "200px";
+    const content7 = document.getElementById("content7");
+    content7.textContent = "SHADED WALWAYS CREATING VERANDAHS FOR COOLING";
+    const image8 = document.getElementById("image8");
+    image8.src = "/images/bh7.png";
+    image8.style.width = "300px";
+    image8.style.height = "200px";
     const para1 = document.getElementById("content");
     para1.textContent =
       "Architect: Pierre Jeanneret Year Built: Primarily late 1950s to 1960s (as part of the campus development post-1956 relocation).";
@@ -404,3 +427,17 @@ window.addEventListener("resize", () => {
 });
 
 animate();
+/*let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', function() {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY) {
+        console.log('Scrolling Down');
+    } else if (currentScrollY < lastScrollY) {
+        console.log('Scrolling Up');
+    }
+
+    lastScrollY = currentScrollY; // Update the position for the next event
+});
+*/
