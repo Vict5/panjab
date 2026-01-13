@@ -64,6 +64,7 @@ const p = document.createElement("p");
 loader.load(
   // Model URL (replace with your model path)
   "https://media.githubusercontent.com/media/Vict5/panjab/master/public/model/Untitled.glb",
+  //"/model/Untitled.glb",
   // onLoad callback
   function (glb) {
     const model = glb.scene;
@@ -177,12 +178,16 @@ function animate() {
   controls.update();
   renderer.render(scene, camera);
   labelRenderer.render(scene, camera);
+  const elementToTrack = document.getElementById("overlay");
+  // Add event listener for when the mouse enters the element
   window.addEventListener("wheel", (event) => {
-    if (event.deltaY < 0) {
-      controls.moveForward(0.0001);
-    }
-    if (event.deltaY > 0) {
-      controls.moveForward(-0.0001);
+    if (!elementToTrack.matches(":hover")) {
+      if (event.deltaY < 0) {
+        controls.moveForward(0.0001);
+      }
+      if (event.deltaY > 0) {
+        controls.moveForward(-0.0001);
+      }
     }
   });
   //code for show / hiding overlay
