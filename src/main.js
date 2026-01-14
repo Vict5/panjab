@@ -247,7 +247,7 @@ function animate() {
     const content1 = document.getElementById("content1");
     content1.style.margin = "none";
     content1.textContent =
-      "FIGURE 1: Students’ center model showcasing the ramp and brise soleil used in shading\r\nIntended Use: Hub for student activities, including recreation, dining (cafeterias, coffee house), social gatherings, student council offices, and cultural events. \r\nCurrent Use: Remains a vibrant student hub (known as Stu-C), popular for affordable eateries, hangouts, events, and as a social/cultural landmark; also attracts visitors and alumni. \r\n";
+      "FIGURE 1: Students’ center model showcasing the ramp and brise soleil used in shading\r\n\r\nIntended Use: Hub for student activities, including recreation, dining (cafeterias, coffee house), social gatherings, student council offices, and cultural events. \r\nCurrent Use: Remains a vibrant student hub (known as Stu-C), popular for affordable eateries, hangouts, events, and as a social/cultural landmark; also attracts visitors and alumni. \r\n";
     const image2 = document.getElementById("image2");
     image2.src = "/images/sc2.png";
     image2.style.width = "380px";
@@ -294,7 +294,7 @@ function animate() {
     image8.style.height = "268px";
     const para1 = document.getElementById("content");
     para1.textContent =
-      "Architects: Pierre Jeanneret, B.P. Mathur, B.S. Kesavan, and J.S. Sharma. \r\nYear Built: Foundation stone laid in 1958; inaugurated in 1963 by Jawaharlal Nehru.\r\n Intended Use: Central university library for academic research, reading, and housing extensive collections. \r\nCurrent Use: Main university library with over 800,000 documents, rare manuscripts, digital resources; centrally air-conditioned, 24/7 reading hall access; popular study spot. \r\nClimatic Approaches (Past/Original Design): Diagonal east-west orientation for optimal natural ";
+      "Architects: Pierre Jeanneret, B.P. Mathur, B.S. Kesavan, and J.S. Sharma. \r\nYear Built: Foundation stone laid in 1958; inaugurated in 1963 by Jawaharlal Nehru.\r\n\r\nIntended Use: Central university library for academic research, reading, and housing extensive collections. \r\nCurrent Use: Main university library with over 800,000 documents, rare manuscripts, digital resources; centrally air-conditioned, 24/7 reading hall access; popular study spot. \r\nClimatic Approaches (Past/Original Design): Diagonal east-west orientation for optimal natural ";
     const image1 = document.getElementById("image1");
     image1.src = "/images/lb1.png";
     image1.style.width = "380px";
@@ -344,7 +344,7 @@ function animate() {
     image1.style.height = "246px";
     const content1 = document.getElementById("content1");
     content1.textContent =
-      "Figure 1: Gandhi Bhawan model \r\nIntended Use: Centre dedicated to the study of Mahatma Gandhi's life, works, and philosophy; includes auditorium, library, and spaces for seminars/exhibitions.\r\nCurrent Use: Auditorium and hub for Gandhian studies, events, exhibitions; iconic landmark attracting visitors for its architecture and serene setting.";
+      "Figure 1: Gandhi Bhawan model \r\n\r\nIntended Use: Centre dedicated to the study of Mahatma Gandhi's life, works, and philosophy; includes auditorium, library, and spaces for seminars/exhibitions.\r\nCurrent Use: Auditorium and hub for Gandhian studies, events, exhibitions; iconic landmark attracting visitors for its architecture and serene setting.";
     const image2 = document.getElementById("image2");
     image2.src = "/images/gb2.png";
     image2.style.width = "380px";
@@ -394,7 +394,7 @@ function animate() {
     image1.style.height = "146px";
     const content1 = document.getElementById("content1");
     content1.textContent =
-      "Figure 1: Model of boy’s hostel \r\nIntended Use: Residential accommodation for male students, providing affordable living with shared rooms, mess facilities, and common areas.  \r\nCurrent Use: Active residence for male students (8 hostels accommodating thousands); vibrant community spaces with mess, canteens, and recreational facilities. ";
+      "Figure 1: Model of boy’s hostel \r\n\r\nIntended Use: Residential accommodation for male students, providing affordable living with shared rooms, mess facilities, and common areas.  \r\nCurrent Use: Active residence for male students (8 hostels accommodating thousands); vibrant community spaces with mess, canteens, and recreational facilities. ";
     const image2 = document.getElementById("image2");
     image2.src = "/images/bh2.png";
     image2.style.width = "380px";
