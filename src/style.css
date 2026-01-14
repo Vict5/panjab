@@ -15,6 +15,7 @@ main {
   overflow: auto;
   white-space: pre-wrap;
   font-family: Poppins, sans-serif;
+  margin: 0px;
 }
 .content {
   display: block;
