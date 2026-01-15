@@ -118,6 +118,12 @@ image1.style.height = "269px";
 const cont6 = document.getElementById("content6");
 cont6.textContent =
   "Master plan for Panjab University, Chandigarh, India (1958)";
+const image2 = document.getElementById("image7");
+image2.src = "/images/mp2.png";
+image2.style.width = "380px";
+image2.style.height = "269px";
+const cont7 = document.getElementById("content7");
+cont7.textContent = " Panjab university axononometric map (2025)";
 const para1 = document.getElementById("content");
 para1.textContent =
   "Architects: Pierre Jeanneret, Le Corbusier, Maxwell Fry and Jane Drew \r\nYear(s): 1951-1965\r\nLocation: Chandigarh, India\r\n\r\nThe Panjab University Campus in Chandigarh is a landmark project of post-Independence Indian modernism, designed by the renowned architect Pierre Jeanneret (cousin and collaborator of Le Corbusier) in the 1950s. As part of the larger Chandigarh Capital Project, the campus embodies the principles of the Modern Movement, specifically adapting them for the local climate and context.\r\nThe design features a strict gridiron plan organized around a central pedestrian mall. The architecture is characterized by features like exposed brick, reinforced concrete, deep verandahs, shaded  spaces and brise-soleil.\r\nThe campus includes a series of academic buildings, hostels, and faculty housing, all unified by a consistent material palette and a human-centric scale. The project is celebrated not just as an educational institution but as a holistic application of modernist urban planning and architectural design.\r\n";
@@ -233,6 +239,12 @@ function animate() {
     const cont6 = document.getElementById("content6");
     cont6.textContent =
       "Master plan for Panjab University, Chandigarh, India (1958)";
+    const image2 = document.getElementById("image7");
+    image2.src = "/images/mp2.png";
+    image2.style.width = "380px";
+    image2.style.height = "269px";
+    const cont7 = document.getElementById("content7");
+    cont7.textContent = " Panjab university axononometric map (2025)";
     const para1 = document.getElementById("content");
     para1.textContent =
       "Architects: Pierre Jeanneret, Le Corbusier, Maxwell Fry and Jane Drew \r\nYear(s): 1951-1965\r\nLocation: Chandigarh, India\r\n\r\nThe Panjab University Campus in Chandigarh is a landmark project of post-Independence Indian modernism, designed by the renowned architect Pierre Jeanneret (cousin and collaborator of Le Corbusier) in the 1950s. As part of the larger Chandigarh Capital Project, the campus embodies the principles of the Modern Movement, specifically adapting them for the local climate and context.\r\nThe design features a strict gridiron plan organized around a central pedestrian mall. The architecture is characterized by features like exposed brick, reinforced concrete, deep verandahs, shaded  spaces and brise-soleil.\r\nThe campus includes a series of academic buildings, hostels, and faculty housing, all unified by a consistent material palette and a human-centric scale. The project is celebrated not just as an educational institution but as a holistic application of modernist urban planning and architectural design.\r\n";
