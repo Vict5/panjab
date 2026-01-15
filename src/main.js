@@ -204,8 +204,9 @@ function animate() {
   controls.update();
   renderer.render(scene, camera);
   labelRenderer.render(scene, camera);
+  console.log(camera.position);
   const elementToTrack = document.getElementById("overlay");
-  // Add event listener for when the mouse enters the element
+  // Add event listener for when the mouse enters the element x: 0.9678562723667705, y: 0, z: 6.933538546315479  x: 1.9287538764041967, y: 0.58, z: 7.179853690502065
   window.addEventListener("wheel", (event) => {
     if (!elementToTrack.matches(":hover")) {
       if (event.deltaY < 0) {
@@ -229,7 +230,7 @@ function animate() {
   document.getElementById("l0").onclick = function () {
     clear();
     camera.position.set(0.1533, 0.58, 1.733);
-    camera.lookAt(-1.31, 0.58, 5.514);
+    camera.lookAt(-1.31, -1.5, 5.514);
     const header1 = document.getElementById("header1");
     header1.textContent = "PANJAB UNIVERSITY";
     const image1 = document.getElementById("image6");
@@ -394,8 +395,8 @@ function animate() {
     image4.style.height = "146px";
   };
   document.getElementById("l4").onclick = function () {
-    camera.position.set(-2.3561, 0.58, 0.3952);
-    camera.lookAt(-3.6965, 0, 1.38411);
+    camera.position.set(1.928, 0.58, 7.179);
+    camera.lookAt(0.967, 0, 6.933);
     clear();
     const header1 = document.getElementById("header1");
     header1.textContent = "BOYS' HOSTEL";
