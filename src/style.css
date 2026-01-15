@@ -13,9 +13,8 @@ main {
   opacity: 0.7;
   color: black;
   overflow: auto;
-  white-space: pre-wrap;
   font-family: Poppins, sans-serif;
-  margin: 0px;
+  white-space: pre-line;
 }
 .content {
   display: block;
