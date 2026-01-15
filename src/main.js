@@ -121,7 +121,7 @@ cont6.textContent =
 const image2 = document.getElementById("image7");
 image2.src = "/images/mp2.png";
 image2.style.width = "380px";
-image2.style.height = "269px";
+image2.style.height = "214px";
 const cont7 = document.getElementById("content7");
 cont7.textContent = " Panjab university axononometric map (2025)";
 const para1 = document.getElementById("content");
@@ -242,7 +242,7 @@ function animate() {
     const image2 = document.getElementById("image7");
     image2.src = "/images/mp2.png";
     image2.style.width = "380px";
-    image2.style.height = "269px";
+    image2.style.height = "214px";
     const cont7 = document.getElementById("content7");
     cont7.textContent = " Panjab university axononometric map (2025)";
     const para1 = document.getElementById("content");
